@@ -1,0 +1,56 @@
+
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8"/>
+	<style type="text/css">
+	
+		/*第一种*/
+		/*.ul-1{
+			height:100px
+		}*/
+		
+		/*第四种*/
+		/*.ul-1{
+			overflow: hidden;
+		}*/
+
+		/*第五种 终极版本*/
+		/*.ul-1::after{
+			content: "";
+			clear: both;
+			display: block;
+		}*/
+
+		/*第二种、第三种(内墙外墙)*/
+		/*div{
+			clear:both
+		}*/
+		
+		li{
+			width: 100px;
+			height: 100px;
+			background: mediumpurple;
+			margin: 10px;
+			float: left;
+		}
+		
+	</style>
+	</head>
+	<body>
+		<ul class="ul-1">
+			<li></li>
+			<li></li>
+			<li></li>
+			<!--<div></div>-->
+		</ul>
+		<!--<div id="">
+			
+		</div>-->
+		<ul class="ul-2">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>
